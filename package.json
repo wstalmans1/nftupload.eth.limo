@@ -1,0 +1,12 @@
+{
+  "name": "nftupload",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev": "pnpm -C apps/web dev",
+    "build": "pnpm -C packages/contracts compile && pnpm -C apps/web build",
+    "export": "pnpm -C apps/web build",
+    "test": "pnpm -C packages/contracts test",
+    "deploy:sepolia": "pnpm -C packages/contracts deploy:sepolia"
+  }
+}
